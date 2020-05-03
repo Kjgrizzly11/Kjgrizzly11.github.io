@@ -17,10 +17,10 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     font-family: 'Roboto Slab', serif;
+    text-align: center;
 }
 
-.top-div p,
-.top-div a {
+.top-div p, .top-div a {
     font-size: 1.2rem;
     padding: 5px;
 }
@@ -46,16 +46,16 @@ header a, footer a {
 }
 
 .site-div img {
-    
-    width: 50%;
+    display: flex;
+    width: 90%;
+    margin: auto;
 }
-
 .content-box {
     width: 100%;
-    background-color: #ff0505;
+  
+    background-color: #ffffff;
     border-radius: 25px;
     margin: 25px;
-    
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -70,13 +70,15 @@ header a, footer a {
     padding: 20px 15px;
     margin: 0;
     border-radius: 25px 25px 0px 0px;
+    text-align: center;
     
 }
 
 .site-div {
     width: 95%;
-    height: 50%;
+    height: 75%;
     margin: 0 auto;
+
 }
 
 .bottom-border {
@@ -87,20 +89,22 @@ header a, footer a {
 
 .description p {
     padding: 10px 10px;
-    font-size: 1em
+    font-size: 1em;
+    text-align: left;
 }
 
 .description {
-    padding: 10px 0;
+    padding: 10px;
 }
 
 .top-div {
     padding: 10px 10px;
     margin: 0;
+    text-align: center;
 }
 
 #sections-container {
-    max-width: 450px;
+    max-width: 80%;
     margin: 0 auto;
 }
 
@@ -112,16 +116,16 @@ p {
 @media screen and (min-width:720px) {
     #sections-container {
         display: grid;
-        grid-template-columns: auto;
-        grid-gap: 50px;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 75px;
     }
 
 }
 
-@media screen and (min-width:1280px) {
+@media screen and (min-width:1120px) {
     #sections-container {
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
         
