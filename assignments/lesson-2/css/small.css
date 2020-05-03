@@ -9,14 +9,10 @@ body {
     width: 100%;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto Slab', serif;
 
     color: white
-}
-
-h1 {
-    font-weight: bold;
 }
 
 p {
@@ -37,7 +33,7 @@ header, footer {
     text-align: center;
     background-color: rgb(0, 157, 255);
     color: white;
-    padding: 25px;
+    padding: 25px ;
     
 }
 
@@ -45,37 +41,41 @@ header a, footer a {
     color: white;
 }
 
-#returnHome {
+#return {
     text-align: center;
 }
 
 .site-div img {
-    width: 100%;
+    
+    width: 50%;
 }
 
 .content-box {
     width: 100%;
-    background-color: #f4f4f4;
-    border-radius: 15px;
-    margin: 30px auto;
-
+    background-color: #ff0505;
+    border-radius: 25px;
+    margin: 25px;
+    
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     box-shadow: 0px 5px 30px -10px black;
+    
+
 
 }
 
-.content-box h3 {
+.content-box h3 { 
     background-color: rgb(0, 157, 255);
     padding: 20px 15px;
     margin: 0;
-    border-radius: 15px 15px 0 0;
+    border-radius: 25px 25px 0px 0px;
+    
 }
 
 .site-div {
-    width: 90%;
-    height: 800px;
+    width: 95%;
+    height: 50%;
     margin: 0 auto;
 }
 
@@ -83,7 +83,6 @@ header a, footer a {
     background-color: rgb(0, 157, 255);
     padding: 20px;
     border-radius: 0 0 15px 15px;
-
 }
 
 .description p {
@@ -101,7 +100,7 @@ header a, footer a {
 }
 
 #sections-container {
-    max-width: 80%;
+    max-width: 450px;
     margin: 0 auto;
 }
 
@@ -109,21 +108,21 @@ p {
     margin: 0;
 }
 
-@media only screen and (min-width:550px) {
+
+@media screen and (min-width:720px) {
     #sections-container {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: auto;
         grid-gap: 50px;
     }
 
 }
 
-@media only screen and (min-width:900px) {
+@media screen and (min-width:1280px) {
     #sections-container {
-        display:grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 50px;
-   
+        display: grid;
+        grid-template-columns: auto;
     }
-
 }
+        
+
