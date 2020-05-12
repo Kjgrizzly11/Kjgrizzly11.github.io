@@ -33,8 +33,7 @@ header, footer {
     text-align: center;
     background-color: rgb(0, 157, 255);
     color: white;
-    padding: 25px ;
-    
+    padding: 25px ;  
 }
 
 header a, footer a {
@@ -60,9 +59,6 @@ header a, footer a {
     justify-content: space-between;
     flex-direction: column;
     box-shadow: 0px 5px 30px -10px black;
-    
-
-
 }
 
 .content-box h3 { 
@@ -70,15 +66,13 @@ header a, footer a {
     padding: 20px 15px;
     margin: 0;
     border-radius: 25px 25px 0px 0px;
-    text-align: center;
-    
+    text-align: center;  
 }
 
 .site-div {
     width: 95%;
-    height: 75%;
+    height: 50%;
     margin: 0 auto;
-
 }
 
 .bottom-border {
@@ -119,7 +113,6 @@ p {
         grid-template-columns: 1fr 1fr;
         grid-gap: 75px;
     }
-
 }
 
 @media screen and (min-width:1120px) {
