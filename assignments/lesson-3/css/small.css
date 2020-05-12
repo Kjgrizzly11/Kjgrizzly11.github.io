@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
 
 :root {
-    --white: #f7f7f7;
-    --grey: #36494e;
-    --lightgrey: #6c7274;
-    --blue: #3b5998;
-    --lightblue: #deeefd;
+    --white:#f7f7f7;
+    --grey:#36494e;
+    --lightgrey:#6c7274;
+    --blue:#3b5998;
+    --lightblue:#deeefd;
 }
 
 body {
