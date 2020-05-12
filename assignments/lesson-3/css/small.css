@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
 
 /* This doesn't validate in css validator, but it is correct. https://www.freecodecamp.org/forum/t/css-custom-property-or-variable-gives-validation-error-but-why/234744
-According to this site it has been requested.*/
+According to this site it has been requested feature.*/
 :root {
     --white:#f7f7f7;
     --grey:#36494e;
