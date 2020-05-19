@@ -6,6 +6,6 @@ function formatDate() {
     var monthofYear = monthsofyear[raw_date.getMonth()];
 
     var output = dayofWeek + ', ' + raw_date.getDate() + ' ' +  monthofYear + ' ' + raw_date.getFullYear();
-    document.getElementById('date_time').innerHTML = output;
+    document.getElementById('formatDate').innerHTML = output;
 }
 formatDate();
