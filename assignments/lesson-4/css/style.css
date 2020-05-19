@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@531&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
+
+
+/* This doesn't validate in css validator, but it is correct. https://www.freecodecamp.org/forum/t/css-custom-property-or-variable-gives-validation-error-but-why/234744
+According to this site it has been requested feature.*/
+:root {
+    --white:#f7f7f7;
+    --grey:#36494e;
+    --lightgrey:#6c7274;
+    --blue:#3b5998;
+    --lightblue:#deeefd;
+}
+
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    background-color: var(--white);
+}
+
+.head-bar {
+    background-color: var(--blue);
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: var(--white);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+nav {
+    background-color: var(--blue);
+    font-family: "Roboto Slab", sans-serif;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: var(--white);
+    border-top: 2px solid var(--white);
+}
+
+nav ul li a:hover {
+    background-color: var(--white);
+    color: var(--blue);
+}
+
+nav ul li.active a {
+    background-color: var(--white);
+    color: var(--blue);
+}
+
+.head-bar {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.head-bar div {
+    text-align: center;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.hide {
+    display: none;
+}
+
+main {
+    background-color: var(--white);
+    margin: 0;
+}
+
+
+
+h1,h2,h3 {
+    font-family: "Roboto", serif;
+    color: var(--grey)
+}
+
+.top-heading {
+    margin-bottom: 0;
+    color: var(--white);
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+
+.motto {
+    margin: 5px 10px 10px 10px;
+    color: var(--white);
+    font-family: "Roboto", serif;
+}
+
+p, li, a {
+    font-family: "Roboto", sans-serif;
+}
+
+.content-box {
+    box-shadow: 2px 5px 10px -7px var(--grey), -2px -5px 10px -7px var(--white);
+    margin: 30px;
+    background-color: var(--lightblue);
+    max-width: 1200px;
+}
+
+#content {
+    display: block;
+    padding: 10px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+
+
+footer {
+    padding: 5px;
+    background-color: var(--blue);
+    text-align:center;
+}
+
+
+footer p, footer a{
+    color: var(--white);
+}
+
+.logo {
+    width: 80px;
+    padding: 10px;
+}
+
+
+
+@media only screen and (min-width: 660px) {
+    nav button {
+        display: none;
+    }
+
+   
+    .hide {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    #primaryNav li a, #primaryNav li {
+        display: block;
+        width: 100%;
+    }
+
+    #primaryNav a {
+        padding: 20px 10px;
+    }
+
+    .logo {
+        width: 100px;
+    }
+    .head-bar {
+        justify-content: center;
+    }
+
+   
+    .footer p, .footer a {
+        font-size: 1em;
+    }
+
+    #date {
+        margin-top: 10px;
+        font-size: 1em;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .footer {
+        padding: 20px;
+    }
+
+
+    main {
+     
+        padding: 20px;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+   
+    
+    h2 {
+        font-size: 2.5em;
+    }
+
+    .top-heading {
+        font-size: 2.6em;
+    }
+
+    .motto {
+        font-size: 1.1em;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+
+
+    #date {
+        font-size: 1.2em;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+}
