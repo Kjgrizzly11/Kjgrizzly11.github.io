@@ -1,4 +1,4 @@
-alert('hi');
+alert('You are about to see bacon!');
 const images = document.querySelectorAll('[data-src]');
 
 function preloadImage(img){
