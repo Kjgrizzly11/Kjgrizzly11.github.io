@@ -9,7 +9,7 @@ function formatDate() {
     document.getElementById('formatDate').innerHTML = output;
 
     //Display Banner
-    if(daysofWeek == '5'){
+    if(dayofWeek == 'Friday'){
         document.getElementById('banner').style.display = "block";
     }
 }

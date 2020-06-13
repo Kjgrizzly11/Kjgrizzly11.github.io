@@ -279,6 +279,15 @@ figure{
     margin: 0 auto;
 }
 
+#banner{
+    padding: 10px 20px;
+    background-color: var(--lightblue);
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    display:none;
+}
+
 
 @media only screen and (min-width: 660px) {
     nav button {
@@ -356,14 +365,7 @@ figure{
         display:block;
     }
        
-    #banner{
-        padding: 10px 20px;
-        background-color: var(--lightblue);
-        text-align: center;
-        width: 100%;
-        font-size: 18px;
-        display: none;
-    }
+   
     #gallery{
         grid-template-columns: 1fr 1fr;
     }
