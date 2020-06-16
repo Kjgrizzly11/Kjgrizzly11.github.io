@@ -308,12 +308,12 @@ legend{
     margin-top: 17px;
     margin-left: 20px;
 }
-.radio-label {
+.radio{
     display: flex;
     align-items: center;
 }
 
-.radio-label input {
+.radio input {
     margin-right: 6px;
     margin-left: 20px;
 }
