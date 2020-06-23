@@ -561,13 +561,14 @@ label, textarea, input, div, select{
         flex-direction: column;
         margin: 15px;
         max-width: 80%;
+        padding-bottom: 15px;
         
     }
 
     .card img{
         width: 80%;
         margin: 0 auto;
-        padding-bottom: 15px;
+        
     }
     .card:nth-child(odd){
         
