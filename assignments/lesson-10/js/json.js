@@ -36,7 +36,7 @@ fetch(apiURL)
             desc = jsonObject.list[i].weather[0].description;
             console.log(jsonObject.list[i].weather[0].icon);
 
-            document.getElementById('icon' + i).setAttribute('src', './images/' + imagesrc + '.svg');
+            document.getElementById('icon' + i).setAttribute('src', 'http://openweathermap.org/img/w/' + imagesrc + '.png');
             document.getElementById('icon' + i).setAttribute('alt', desc);
         }}    
     )
