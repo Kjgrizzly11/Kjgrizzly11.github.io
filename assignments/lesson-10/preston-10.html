@@ -55,11 +55,11 @@
                             <p>Wind Speed:</p>
                         </div>
                         <div id="weather-values">
-                            <p>&#9729;Heavy Winds&#9729;</p>
-                            <p><span id="temp">58</span> &#8457;</p>
-                            <p id="windChill">  <span id="windChill">N/A</span></p>
-                            <p>43&#37;</p>
-                            <p><span id="wSpeed">208</span> mph</p>
+                            <p class="rc"><span id="current"></span></p>
+                            <p class="rc"><span id="temp"></span>&#8457;</p>
+                            <p class="rc"><span id="windchill"></span>&#8457;</p>
+                            <p class="rc"><span id="humidity"></span>%</p>
+                            <p class="rc"><span id="windspeed"></span> mph</p>
                         </div>
                     </div>
                 </div>
@@ -67,17 +67,34 @@
             
             <h3>5 Day Forecast</h3>
         <div id="forecast-table"> 
-                <p1>Wed</p1>
-                <p1>Thu</p1>
-                <p1>Fri</p1>
-                <p1>Sat</p1>
-                <p1>Sun</p1>
-                
-                <p2>&#x1F327;75&#0176;</p2>
-                <p2>&#x1F327;75&#0176;</p2>
-                <p2>&#x1F327;75&#0176;</p2>
-                <p2>&#x1F327;75&#0176;</p2>
-                <p2>&#x1F327;75&#0176;</p2>
+            <div class="forecast-days">
+                <p><span id="day1"></span></p>
+                <div>
+                    <img id="icon1">
+                    <p><span id="tempd1"></span> &deg;F</p>
+                </div>
+                <p><span id="day2"></span></p>
+                <div>
+                    <img id="icon2">
+                    <p><span id="tempd2"></span> &deg;F</p>
+                </div>
+                <p><span id="day3"></span></p>
+                <div>
+                    <img id="icon3">
+                    <p><span id="tempd3"></span> &deg;F</p>
+                </div>
+                <p><span id="day4"></span></p>
+                <div>
+                    <img id="icon4">
+                    <p><span id="tempd4"></span> &deg;F</p>
+                </div>
+                <p><span id="day5"></span></p>
+                <div>
+                    <img id="icon5">
+                    <p><span id="tempd5"></span> &deg;F</p>
+                </div>
+            </div>
+      
         </div>
         
         <div class="content-box" id="article">
@@ -127,6 +144,7 @@
     <script src="js/calcWindChill.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webFont.js"></script>
+    <script src="js/json.js"></script>
    
 </body>
 

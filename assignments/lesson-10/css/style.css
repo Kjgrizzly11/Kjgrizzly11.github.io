@@ -86,6 +86,12 @@ main {
     margin: 0;
 }
 
+.hero picture{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;  
+    text-align: center;
+}
 
 .hero{
     position: relative;
@@ -199,12 +205,31 @@ h2 {
 }
 
 #forecast-table{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     border: 2px solid var(--blue);
     border-collapse: collapse;
     padding: 10px;
     align-self: center;
+    margin: 0 auto;
+}
+
+.forecast-days {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+    
+}
+.forecast-days p {
+    margin: 0;
+    padding-top: 5px;
+}
+
+.forecast-days div {
+   
+    grid-row: 2/3;
+    background-color: var(--lightblue);
+    padding: 10px;
+    margin: 10px;
+    color: #b7b5b3;
 }
 
 

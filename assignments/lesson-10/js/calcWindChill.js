@@ -1,17 +1,11 @@
-function calcWindChill() {
+let t = parseFloat(document.getElementById("temp").innerText);
+let s = parseFloat(document.getElementById("windspeed").innerText);
+let wchill = 35.74 + (0.6215 * t) - (35.75 * (s**0.16)) + (0.4275 * t * (s**0.16));
 
-    let  t = parseFloat(document.getElementById('temp').innerHTML);
-    let w = parseFloat(document.getElementById('wSpeed').innerHTML);
-    console.log(w)
-    console.log(t)
-    
-        if(t <= 50 && w > 3){
-        let windChill = 35.74 + 0.6215 * t -35.75 * Math.pow(w, 0.16) + 0.4275 *t * Math.pow(w, .16);
-        windChill = Math.round(windChill)
-        document.getElementById('windChill').innerHTML = windChill
-        }
-        else{
-        document.getElementById('windChillDiv').innerHTML = 'N/A'
-        }
-    }
-    
+if (isNaN(wchill)) {
+    document.getElementById("windchill").innerHTML = "N/A";
+}
+
+else {
+    document.getElementById("windchill").innerHTML = parseInt(wchill);
+}
