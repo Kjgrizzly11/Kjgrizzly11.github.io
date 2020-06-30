@@ -117,8 +117,7 @@ main {
     top: 1rem;
     left: 1rem;
     max-width: 280px;
-    padding-right: 10px;
-    
+    padding-left: 5px;
 
 }
 
@@ -199,37 +198,42 @@ h2 {
     align-self: center;
     margin: 0;
     border-collapse: collapse;
-    font-family: "Roboto", serif;
     color: var(--blue)
     
 }
 
 #forecast-table{
-    border: 2px solid var(--blue);
+   
     border-collapse: collapse;
     padding: 10px;
     align-self: center;
     margin: 0 auto;
+    font-family: "Roboto", serif; 
 }
 
 .forecast-days {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     margin: 0 auto;
+    max-width: 100%;
+ 
     
 }
 .forecast-days p {
+    font-family: "Roboto", serif; 
     margin: 0;
     padding-top: 5px;
+    color: var(--grey);
+    text-align: center;
 }
 
 .forecast-days div {
-   
+    border: 2px solid var(--blue);
     grid-row: 2/3;
     background-color: var(--lightblue);
     padding: 10px;
     margin: 10px;
-    color: #b7b5b3;
+ 
 }
 
 
