@@ -206,7 +206,7 @@ h2 {
 }
 
 #forecast-table{
-   
+    display: none;
     border-collapse: collapse;
     padding: 10px;
     align-self: center;
@@ -429,6 +429,9 @@ label, textarea, input, div, select{
     text-align: left;    
 }
 @media only screen and (min-width: 660px) {
+    #forecast-table{
+        display: block;  
+    } 
     .fa {
         font-size: 50px;
         padding: 20px;
