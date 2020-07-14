@@ -511,9 +511,10 @@ label, textarea, input, div, select{
 
     #article img{
         max-width: 80%;
-        display: flex;
+        display: block;
         margin: 0 auto;
         padding-left: 10px;
+        float: right;
     }
 
     .map {   
