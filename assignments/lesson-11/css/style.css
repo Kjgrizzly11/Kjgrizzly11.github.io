@@ -267,10 +267,7 @@ p, li, a, b {
     text-align: left;
 }
 
-#storm-center{
-    margin-left: 200px;
-    margin-right: 200px;
-}
+
 #article {
     display: flex;
     padding: 20px;
@@ -429,6 +426,12 @@ label, textarea, input, div, select{
     text-align: left;    
 }
 @media only screen and (min-width: 660px) {
+
+    #storm-center{
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    
     #forecast-table{
         display: block;  
     } 
