@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site planning for weather application site">
+    <title>Windy Weather | Soda Springs Town Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+
+    <header>
+        <div class="head-bar">
+            <img class="logo" src="images/Tornado_icon.png" alt="Tornado_icon">
+            <div>
+                <h1 class="top-heading">Windy Weather</h1>
+                <div class="motto">Making Weather a Breeze</div>
+            </div>
+        </div>
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li class="active"><a href="sodasprings.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Soda Springs, Idaho</h2>
+
+            <div class="hero">
+                <picture>
+                    <source srcset="images\wdd230_image_franklinLarge1100.jpg" alt="Hero Image" class="hero-image" media="(min-width: 1200px)">
+                    <source srcset="images\wdd230_image_medium800.jpg" alt="Hero Image" class="hero-image" media="(min-width: 660px)">    
+                    <img src="images\wdd230_image_small500.jpg" alt="Hero Image">
+                </picture>
+               
+                 <div id ="weather-summary">
+                    <h4>Weather Summary</h4>
+                    <div id="weather-table">
+                        <div id="weather-stats">
+                            <p>Currently:</p>
+                            <p>High:</p>
+                            <p>Wind Chill:</p>
+                            <p>Humidity:</p>
+                            <p>Wind Speed:</p>
+                        </div>
+                        <div id="weather-values">
+                            <p class="rc"><span id="current"></span></p>
+                            <p class="rc"><span id="temp"></span>&#8457;</p>
+                            <p class="rc"><span id="windchill"></span>&#8457;</p>
+                            <p class="rc"><span id="humidity"></span>%</p>
+                            <p class="rc"><span id="windspeed"></span> mph</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <h2>5 Day Forecast</h2>
+        <div id="forecast-table"> 
+            <div class="forecast-days">
+                <p><span id="day1"></span></p>
+                <div>
+                    <img id="icon1">
+                    <p><span id="tempd1"></span> &#8457;</p>
+                </div>
+                <p><span id="day2"></span></p>
+                <div>
+                    <img id="icon2">
+                    <p><span id="tempd2"></span> &#8457;</p>
+                </div>
+                <p><span id="day3"></span></p>
+                <div>
+                    <img id="icon3">
+                    <p><span id="tempd3"></span> &#8457;</p>
+                </div>
+                <p><span id="day4"></span></p>
+                <div>
+                    <img id="icon4">
+                    <p><span id="tempd4"></span> &#8457;</p>
+                </div>
+                <p><span id="day5"></span></p>
+                <div>
+                    <img id="icon5">
+                    <p><span id="tempd5"></span> &#8457;</p>
+                </div>
+            </div>
+      
+        </div>
+
+        <div class="content-box" id="events" >
+            <h3>Upcoming Events</h3>
+            <div id="event-content">
+            </div>
+        </div>
+
+        <div class="content-box" id="article">
+            <div> 
+                <h3>About Soda Springs</h3>
+                <p>The city is named for the hundreds of natural springs of carbonated water that are located in and around the city. 
+                The springs were well known to Native Americans and were a famous landmark along the Oregon Trail in the middle 19th century. 
+                Today the city is also known as the location of the Soda Springs Geyser, which was unleashed in 1934 when "town fathers" were 
+                looking for hot water for a "hot pool" bathing attraction. Instead they drilled into a chamber of highly pressurized carbon 
+                dioxide gas and cold water and the geyser was released. After running for weeks, and flooding the downtown area, it was capped and
+                manually released when requested as a tourist attraction. Now it is let loose every hour on the hour by a timed release valve.
+                Its height and volume have not decreased after many years. There are viewing platforms at either end of the travertine mound
+                where the geyser erupts. Interpretive signs are located on the platforms explaining this phenomenon. </p>
+        </div>
+            <img id="article-img" src="images/sodasprings.jpg" alt="soda-springs-image"> 
+        </div>
+    </main>
+    
+    <footer>
+        <div class ="contact-info">
+            <p><Strong>Windy Weather</Strong></p>
+            <p>30 N 1st E</p>
+            <p>Preston, Id 83264</p>
+            <p>208-265-1598</p>
+            <p>windyweather&#64;windyw.com</p> 
+        </div>
+      
+   <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23471.978813134876!2d-111.60628160000394!3d42.66141151672816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8755968bb0047ae5%3A0x9d3970a1a6df8e12!2sSoda%20Springs%2C%20ID%2083276!5e0!3m2!1sen!2sus!4v1594734982051!5m2!1sen!2sus" 
+   width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+   
+   <div class="contact-follow">
+        <p><Strong>Follow us on:</Strong></p>
+        <a href="http://facebook.com/" class="fa fa-facebook"></a>
+        <a href="http://twitter.com/" class="fa fa-twitter"></a>
+        <a href="http://youtube.com/" class="fa fa-youtube"></a>
+        <a href="http://reddit.com/" class="fa fa-reddit"></a>
+    </div>
+
+    </footer>
+
+    <p>&copy; 2020 | <a href="https://kjgrizzly11.github.io/index.html">Kaden Johnson</a> | Weather Site | <a href="http://www.byui.edu/online" >BYU-I Online Learning</a> </p>
+    <p><span id='formatDate' class='footer-p'></span></p>
+
+    <script src="js/formatDate.js"></script>
+    <script src="js/toggleMenu.js"></script>
+    <script src="js/calcWindChill.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webFont.js"></script>
+    <script src="js/weatherapiSodaSprings.js"></script>
+    <script src="js/loopingDays.js"></script>
+    <script src="js/sodaspringsEvents.js"></script>
+   
+</body>
+
+</html>

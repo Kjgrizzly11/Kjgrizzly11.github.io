@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Site planning for weather application site">
-    <title>Windy Weather| Preston Town Page</title>
+    <title>Windy Weather | Fish Haven Town Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -12,9 +12,6 @@
 </head>
 
     <header>
-        <div id="banner">
-            <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
-        </div>
         <div class="head-bar">
             <img class="logo" src="images/Tornado_icon.png" alt="Tornado_icon">
             <div>
@@ -26,22 +23,22 @@
             <button onclick="toggleMenu()">&#9776; Menu</button>
             <ul id="primaryNav" class="hide">
                 <li><a href="index.html">Home</a></li>
-                <li class="active"><a href="preston-10.html">Preston</a></li>
-                <li><a href="sodasprings-10.html">Soda Springs</a></li>
-                <li><a href="fishhaven-10.html">Fish Haven</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li class="active"><a href="fishhaven.html">Fish Haven</a></li>
                 <li><a href="stormcenter.html">Storm Center</a></li>
-                <li><a href="gallery-10.html">Gallery</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2>Preston, Idaho</h2>
+        <h2>Fish Haven, Idaho</h2>
 
             <div class="hero">
                 <picture>
-                    <source srcset="images\large_wdd230_image_franklinoriginal.jpg" alt="Hero Image" class="hero-image" media="(min-width: 1200px)">
-                    <source srcset="images\med_wdd230_image_franklinoriginal.jpg" alt="Hero Image" class="hero-image" media="(min-width: 660px)">    
-                    <img src="images\small_wdd230_image_franklinoriginal.jpg" alt="Hero Image">
+                    <source srcset="images\wdd230_image_franklinLarge1100.jpg" alt="Hero Image" class="hero-image" media="(min-width: 1200px)">
+                    <source srcset="images\wdd230_image_medium800.jpg" alt="Hero Image" class="hero-image" media="(min-width: 660px)">    
+                    <img src="images\wdd230_image_small500.jpg" alt="Hero Image">
                 </picture>
                
                  <div id ="weather-summary">
@@ -96,56 +93,57 @@
             </div>
       
         </div>
-        
+
+        <div class="content-box" id="events" >
+            <h3>Upcoming Events</h3>
+            <div id="event-content">
+            </div>
+        </div>
+
         <div class="content-box" id="article">
             <div> 
-                <h3>Article</h3>
-                <p>Preston is a city in Franklin County, Idaho, United States. The population was 5,204 at the 2010 census. The city is the county seat of Franklin County. It is part of the Logan, Utah-Idaho Metropolitan Statistical Area.  
-                Preston is a city in Franklin County, Idaho, United States. The population was 5,204 at the 2010 census. The city is the county seat of Franklin County. It is part of the Logan, Utah-Idaho Metropolitan Statistical Area
-                Preston is a city in Franklin County, Idaho, United States. The population was 5,204 at the 2010 census. The city is the county seat of Franklin County. It is part of the Logan, Utah-Idaho Metropolitan Statistical Area
-                Preston is a city in Franklin County, Idaho, United States.  </p>
+                <h3>About Fish Haven</h3>
+                <p>The first settlement at Fish Haven was made in 1864. A post office called Fish Haven was established in 1867, and remained in operation until 1962.
+                The community was so named because nearby Bear Lake is a favorite fishing spot. Originally named Rush Creek, it is an unincorporated community 
+                along the shores of Bear Lake in Bear Lake County, Idaho, United States. It is 4 km north of the Utah border. </p>
         </div>
-            <img id="article-img" src="images/preston-drone.jpg" alt="preston-drone-image"> 
+            <img id="article-img" src="images/fishhaven.jpg" alt="fish-haven-image"> 
         </div>
-
-        <div class="content-box" id="article">      
-            <div>
-                <b>Windy Weather</b>
-                <p>30 N 1st E</p>
-                <p>Preston, Id 83264</p>
-                <p>208-265-1598</p>
-                <p>windyweather&#64;windyw.com</p> 
-                <p>Follow us on:</p>
-                <a href="http://facebook.com/" class="fa fa-facebook"></a>
-                <a href="http://twitter.com/" class="fa fa-twitter"></a>
-                <a href="http://youtube.com/" class="fa fa-youtube"></a>
-                <a href="http://reddit.com/" class="fa fa-reddit"></a>
-             </div>
-           <img class="map" src="images/preston-map.PNG" alt="preston-map">
-            </div> 
-              
-
-             
-         
-          
-        
-        
-    
-      
     </main>
     
     <footer>
+        <div class ="contact-info">
+            <p><Strong>Windy Weather</Strong></p>
+            <p>30 N 1st E</p>
+            <p>Preston, Id 83264</p>
+            <p>208-265-1598</p>
+            <p>windyweather&#64;windyw.com</p> 
+        </div>
       
-        <p>&copy; 2020 | <a href="https://kjgrizzly11.github.io/index.html">Kaden Johnson</a> | Weather Site | <a href="http://www.byui.edu/online" >BYU-I Online Learning</a> </p>
-        <p><span id='formatDate' class='footer-p'></span></p>
+   <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5926.479391985927!2d-111.40049067077037!3d42.038040166839245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875415e9bdab006f%3A0xc1864ed86dd2b0e4!2sFish%20Haven%2C%20ID%2083287!5e0!3m2!1sen!2sus!4v1594734793279!5m2!1sen!2sus"
+    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+   <div class="contact-follow">
+        <p><Strong>Follow us on:</Strong></p>
+        <a href="http://facebook.com/" class="fa fa-facebook"></a>
+        <a href="http://twitter.com/" class="fa fa-twitter"></a>
+        <a href="http://youtube.com/" class="fa fa-youtube"></a>
+        <a href="http://reddit.com/" class="fa fa-reddit"></a>
+    </div>
+
     </footer>
+
+    <p>&copy; 2020 | <a href="https://kjgrizzly11.github.io/index.html">Kaden Johnson</a> | Weather Site | <a href="http://www.byui.edu/online" >BYU-I Online Learning</a> </p>
+    <p><span id='formatDate' class='footer-p'></span></p>
+
     <script src="js/formatDate.js"></script>
     <script src="js/toggleMenu.js"></script>
     <script src="js/calcWindChill.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webFont.js"></script>
-    <script src="js/json.js"></script>
+    <script src="js/weatherapiFishHaven.js"></script>
     <script src="js/loopingDays.js"></script>
+    <script src="js/fishhavenEvents.js"></script>
    
 </body>
 

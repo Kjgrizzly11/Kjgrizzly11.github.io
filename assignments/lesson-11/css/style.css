@@ -14,7 +14,11 @@ html {
     -ms-text-size-adjust: 100%;
     background-color: var(--white);
 }
+body {
+    text-align: center;
 
+ 
+}
 .head-bar {
     background-color: var(--blue);
 }
@@ -97,6 +101,7 @@ main {
     position: relative;
     margin: 0 auto;
     width: 100%;
+    
 }
 
 .hero-img{
@@ -172,8 +177,6 @@ h2 {
 .map {
     width: 60%;
     display: none;
-    margin: auto;
-  
 }
 .motto {
     margin: 5px 10px 10px 10px;
@@ -244,14 +247,17 @@ p, li, a, b {
     
 }
 
+.fa {
+    font-size:35px;
+    padding: 20px;
+}
+
 .content-box {
     box-shadow: 2px 5px 10px -7px var(--grey), -2px -5px 10px -7px var(--white);
-    margin-left: 200px;
-    margin-right: 200px;
     margin-bottom: 25px;
     background-color: var(--lightblue);
     justify-content: center;
-    
+    text-align: left;
 }
 
 #content {
@@ -261,28 +267,36 @@ p, li, a, b {
     text-align: left;
 }
 
+#storm-center{
+    margin-left: 200px;
+    margin-right: 200px;
+}
 #article {
     display: flex;
     padding: 20px;
     margin: 20px auto;
+    text-align: left;
 }
 
 #article img{
-    max-width: 25%;
-    max-height: 25%;
+    display: flex;
+    max-height: 270px;
     margin: 0 auto;
   }
 
 footer {
+    display: flex;
     padding: 5px;
     background-color: var(--blue);
-    text-align:center;
+    justify-content: center;
 }
 
 
 footer p, footer a{
     color: var(--white);
+    text-align: left;
 }
+
 
 .logo {
     width: 80px;
@@ -390,7 +404,36 @@ label, textarea, input, div, select{
     font-style: italic;
 }
 
+#events{
+    text-align: center;
+}
+
+#events h3{
+    padding-top: 10px;
+    
+}
+#event-content{
+    display: flex;
+    justify-content: center;  
+}
+
+#event-content div{
+    padding: 0 15px 7px;
+}
+
+#event-dates{
+    text-align: right;    
+}
+
+#event-titles{
+    text-align: left;    
+}
 @media only screen and (min-width: 660px) {
+    .fa {
+        font-size: 50px;
+        padding: 20px;
+    }
+
     nav button {
         display: none;
     }
@@ -446,6 +489,17 @@ label, textarea, input, div, select{
         justify-content: space-around;
         padding: 20px;
     }
+    .contact-info{
+        padding: 20px;
+        display: block;
+    }
+
+    .contact-follow{
+        padding: 20px;
+        display: block;
+    }
+
+  
 
     main {
         padding: 20px;
@@ -453,16 +507,15 @@ label, textarea, input, div, select{
     }
 
     #article img{
-        max-width: 45%;
-        max-height: 45%;
+        max-width: 80%;
         display: flex;
         margin: 0 auto;
         padding-left: 10px;
     }
 
-    .map {
+    .map {   
         width: 300px;
-    
+        height: 250px;
         display:block;
     }
        
@@ -520,8 +573,14 @@ label, textarea, input, div, select{
 
 
 @media only screen and (min-width: 1200px) {
+
+    .fa {
+        font-size: 50px;
+        padding: 20px;
+    }
+
     .map {
-        width: 300px;
+        width: 280px;
         display: block;
     }
 
